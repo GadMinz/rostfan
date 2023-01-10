@@ -1,0 +1,183 @@
+/*Normalize*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+  color: inherit;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  background: none;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*Normalize*/
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_open {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  background-color: #ff9000;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.modal_open:hover {
+  background-color: #ffa500;
+}
+
+.modal {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 450px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal_title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.modal_desc {
+  font-size: 14px;
+  color: #696969;
+  margin-top: 10px;
+}
+
+.modal_inner {
+  padding: 20px;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.feedback input,
+textarea {
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  resize: none;
+  font-size: 16px;
+}
+
+.feedback input:valid,
+textarea:valid {
+  border: 1px solid #adff2f;
+}
+
+.feedback input:invalid,
+textarea:invalid {
+  border: 1px solid #ff0000;
+}
+
+.feedback button {
+  background-color: #ff9000;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 5px 5px;
+}
